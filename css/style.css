@@ -111,3 +111,9 @@ a {
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
+.intro {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 1.1rem;
+    color: #cbd5e1;
+}
