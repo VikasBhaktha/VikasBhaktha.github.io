@@ -95,3 +95,17 @@ nav a:hover {
 a {
     color: #38bdf8;
 }
+.profile-photo {
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #38bdf8;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
