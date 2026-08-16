@@ -1,22 +1,19 @@
-/* =========================================
-   BASIC RESET
-========================================= */
+/* =========================
+   GLOBAL
+========================= */
 
 * {
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-
     background: #ffffff;
-
     color: #333333;
 
     font-family:
@@ -33,73 +30,58 @@ body {
 }
 
 
-/* =========================================
-   PAGE WIDTH
-========================================= */
+/* =========================
+   MAIN SITE WIDTH
+========================= */
 
-.page-wrapper {
-    width: 100%;
-}
-
-.site-header,
-.main-content,
-.site-footer {
+.site-container {
     max-width: 960px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 0 auto;
+    padding: 0 28px;
 }
 
 
-/* =========================================
+/* =========================
    HEADER
-========================================= */
+========================= */
 
 .site-header {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
 
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding: 30px 0 24px;
 
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #e8e8e8;
 }
 
-.site-title a {
+.site-title {
     color: #222222;
-
-    font-size: 19px;
-    font-weight: 600;
-
     text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.site-title a:hover {
+.site-title:hover {
     color: #2a7ae2;
 }
 
 
-/* =========================================
+/* =========================
    NAVIGATION
-========================================= */
+========================= */
 
 .site-nav {
     display: flex;
-
-    gap: 24px;
+    gap: 26px;
 }
 
 .site-nav a {
     color: #555555;
+    text-decoration: none;
 
     font-size: 15px;
-
-    text-decoration: none;
 }
 
 .site-nav a:hover {
@@ -107,34 +89,37 @@ body {
 }
 
 
-/* =========================================
+/* =========================
    MAIN CONTENT
-========================================= */
+========================= */
 
 .main-content {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding: 55px 0 70px;
 }
 
 
-/* =========================================
-   PROFILE LAYOUT
-========================================= */
+/* =========================
+   PROFILE SECTION
+========================= */
 
 .profile-section {
     display: grid;
 
-    grid-template-columns: 230px 1fr;
+    grid-template-columns: 220px 1fr;
 
-    gap: 45px;
+    gap: 48px;
 
     align-items: start;
 }
 
 
-/* =========================================
+/* =========================
    PROFILE IMAGE
-========================================= */
+========================= */
+
+.profile-image-column {
+    text-align: center;
+}
 
 .profile-image {
     display: block;
@@ -142,17 +127,45 @@ body {
     width: 210px;
     height: auto;
 
+    margin: 0 auto;
+
     border-radius: 4px;
 }
 
 
-/* =========================================
-   TEXT
-========================================= */
+/* =========================
+   PROFILE LINKS
+========================= */
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 16px;
+}
+
+.profile-links a {
+    color: #2a7ae2;
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.profile-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PROFILE TEXT
+========================= */
 
 .profile-text h1 {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 
     color: #222222;
 
@@ -163,42 +176,38 @@ body {
 }
 
 .profile-text h2 {
-    margin-top: 38px;
-    margin-bottom: 15px;
+    margin-top: 36px;
+    margin-bottom: 14px;
 
     color: #222222;
 
-    font-size: 23px;
+    font-size: 22px;
     font-weight: 500;
 }
 
 .profile-text p {
     margin-top: 0;
-    margin-bottom: 18px;
-}
-
-.profile-text strong {
-    font-weight: 600;
+    margin-bottom: 17px;
 }
 
 
-/* =========================================
+/* =========================
    RESEARCH LIST
-========================================= */
+========================= */
 
-.profile-text ol {
-    margin-top: 12px;
-    padding-left: 25px;
+.research-list {
+    padding-left: 22px;
+    margin-top: 10px;
 }
 
-.profile-text li {
-    margin-bottom: 12px;
+.research-list li {
+    margin-bottom: 7px;
 }
 
 
-/* =========================================
-   LINKS
-========================================= */
+/* =========================
+   GLOBAL LINKS
+========================= */
 
 a {
     color: #2a7ae2;
@@ -209,75 +218,40 @@ a:hover {
 }
 
 
-/* =========================================
+/* =========================
    FOOTER
-========================================= */
+========================= */
 
 .site-footer {
-    position: relative;
+    border-top: 1px solid #e8e8e8;
 
-    padding-top: 30px;
-    padding-bottom: 45px;
-
-    border-top: 1px solid #eeeeee;
+    padding: 28px 0 40px;
 
     color: #777777;
-}
-
-.site-footer h2 {
-    margin: 0 0 6px 0;
-
-    color: #555555;
-
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.site-footer p {
-    margin: 4px 0;
-}
-
-.footer-links {
-    display: flex;
-
-    gap: 18px;
-
-    margin-top: 18px;
-}
-
-.footer-links a {
-    font-size: 14px;
-
-    text-decoration: none;
-}
-
-.footer-note {
-    margin-top: 18px !important;
 
     font-size: 13px;
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* =========================
+   TABLET / MOBILE
+========================= */
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
+
+    .site-container {
+        padding: 0 20px;
+    }
 
     .site-header {
-        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
     }
 
     .site-nav {
-        margin-top: 18px;
-
-        flex-wrap: wrap;
-
-        gap: 15px;
-    }
-
-    .main-content {
-        padding-top: 35px;
+        gap: 18px;
     }
 
     .profile-section {
@@ -286,32 +260,41 @@ a:hover {
         gap: 30px;
     }
 
-    .profile-image {
-        width: 190px;
+    .profile-image-column {
+        text-align: left;
     }
 
-}
+    .profile-image {
+        width: 190px;
+        margin: 0;
+    }
 
-
-/* =========================================
-   SMALL PHONES
-========================================= */
-
-@media screen and (max-width: 420px) {
-
-    .site-header,
-    .main-content,
-    .site-footer {
-        padding-left: 18px;
-        padding-right: 18px;
+    .profile-links {
+        justify-content: flex-start;
     }
 
     .profile-text h1 {
-        font-size: 27px;
+        font-size: 28px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 420px) {
+
+    .site-container {
+        padding: 0 16px;
     }
 
-    .profile-text h2 {
-        font-size: 21px;
+    .site-nav {
+        gap: 14px;
+    }
+
+    .profile-image {
+        width: 170px;
     }
 
 }
