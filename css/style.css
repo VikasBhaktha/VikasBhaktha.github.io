@@ -234,52 +234,6 @@ a:hover {
 
 
 /* =========================
-   TABLET / MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .site-container {
-        padding: 0 20px;
-    }
-
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 14px;
-    }
-
-    .site-nav {
-        gap: 18px;
-    }
-
-    .profile-section {
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-    .profile-image-column {
-        text-align: left;
-    }
-
-    .profile-image {
-        width: 190px;
-        margin: 0;
-    }
-
-    .profile-links {
-        justify-content: flex-start;
-    }
-
-    .profile-text h1 {
-        font-size: 28px;
-    }
-}
-
-
-/* =========================
    SMALL PHONES
 ========================= */
 
@@ -329,4 +283,71 @@ a:hover {
 .education-details {
     font-size: 15px;
     color: #777777;
+}
+
+/* =========================
+   PUBLICATIONS
+========================= */
+
+.publication {
+    margin-bottom: 25px;
+}
+
+.publication p {
+    margin-bottom: 5px;
+}
+
+.scholar-link {
+    margin-top: 45px !important;
+    padding-top: 22px;
+
+    border-top: 1px solid #e8e8e8;
+
+    color: #666666;
+}
+
+
+/* =========================
+   TABLET / MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .site-container {
+        padding: 0 20px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+    }
+
+    .site-nav {
+        gap: 18px;
+    }
+
+    .profile-section {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .profile-image-column {
+        text-align: left;
+    }
+
+    .profile-image {
+        width: 190px;
+        margin: 0;
+    }
+
+    .profile-links {
+        justify-content: flex-start;
+    }
+
+    .profile-text h1 {
+        font-size: 28px;
+    }
 }
