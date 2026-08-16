@@ -252,17 +252,47 @@ a:hover {
     }
 
 }
+
 /* =========================
    EDUCATION PAGE
 ========================= */
 
 .education-entry {
-    margin-bottom: 38px;
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 42px;
 }
 
-.education-entry h2 {
-    margin-top: 0;
-    margin-bottom: 5px;
+.education-logo {
+    width: 95px;
+    min-width: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-logo img {
+    display: block;
+
+    max-width: 85px;
+    max-height: 85px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-info h2 {
+    margin: 0 0 5px;
 
     font-size: 20px;
     font-weight: 600;
@@ -270,9 +300,8 @@ a:hover {
     color: #333333;
 }
 
-.education-entry p {
-    margin-top: 0;
-    margin-bottom: 3px;
+.education-info p {
+    margin: 0 0 3px;
 }
 
 .degree {
@@ -283,6 +312,29 @@ a:hover {
 .education-details {
     font-size: 15px;
     color: #777777;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .education-entry {
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .education-logo {
+        width: 65px;
+        min-width: 65px;
+    }
+
+    .education-logo img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
 }
 
 /* =========================
@@ -304,50 +356,4 @@ a:hover {
     border-top: 1px solid #e8e8e8;
 
     color: #666666;
-}
-
-
-/* =========================
-   TABLET / MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .site-container {
-        padding: 0 20px;
-    }
-
-    .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 14px;
-    }
-
-    .site-nav {
-        gap: 18px;
-    }
-
-    .profile-section {
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-    .profile-image-column {
-        text-align: left;
-    }
-
-    .profile-image {
-        width: 190px;
-        margin: 0;
-    }
-
-    .profile-links {
-        justify-content: flex-start;
-    }
-
-    .profile-text h1 {
-        font-size: 28px;
-    }
 }
