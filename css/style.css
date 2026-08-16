@@ -298,3 +298,35 @@ a:hover {
     }
 
 }
+/* =========================
+   EDUCATION PAGE
+========================= */
+
+.education-entry {
+    margin-bottom: 38px;
+}
+
+.education-entry h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #333333;
+}
+
+.education-entry p {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.degree {
+    font-size: 16px;
+    color: #444444;
+}
+
+.education-details {
+    font-size: 15px;
+    color: #777777;
+}
